@@ -1,0 +1,200 @@
+html { overflow:  hidden; }
+
+body {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	cursor: pointer;
+	z-index: 1100;
+}
+
+#pause{
+	cursor: pointer;
+	z-index: 900;
+}
+
+#menu {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#pause {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+#back {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#menuPanel {
+	overflow: auto;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .7);
+	z-index: 1000;
+}
+
+#content {
+	width: 790px;
+	padding: 2%;
+	padding-top: 0;
+	padding-bottom: 0;
+	float: left;
+	color: aliceblue;
+	font-size: 1.1em;
+}
+
+#navigation {
+	padding: 2%;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 10px;
+	width: 20%;
+	float: left;
+}
+
+#navigation button,
+#navigation a {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 0.3em;
+	margin: 0.5em;
+	margin-left: 0;
+	font-weight: bold;
+	background: whitesmoke;
+}
+
+#navigation a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+	color: #000;
+	font-family: Arial;
+	text-align: left;
+}
+
+#best10 {
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-top: 10%;
+}
+
+#best10 li {
+	position: relative;
+}
+
+#best10 li span {
+	position: absolute;
+	right: 0;
+}
+
+#intro {
+	font-size: 20px;
+	color: aliceblue;
+	font-weight: 700;
+}
+
+#intro p {
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+#intro img {
+	vertical-align: middle;
+	width: 100px;
+}
+
+#controls {
+	visibility: hidden;
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+	width: 120px;
+	height: 120px;
+	z-index: 900;
+}
+
+#controls button {
+	position: absolute;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	border: none;
+	border-radius: 100px;
+	margin: 0.5em;
+	font-weight: bold;
+	background: dimgray;
+}
+
+button#top {
+	width: 100px;
+	height: 50px;
+	clip-path: polygon(100% 0, 0 0, 50% 100%);
+	top: -5px;
+	left: 0;
+}
+
+button#right {
+	width: 50px;
+	height: 100px;
+	clip-path: polygon(100% 0, 100% 100%, 0 50%);
+	right: -15px;
+	top: 0;
+}
+
+button#bot {
+	width: 100px;
+	height: 50px;
+	clip-path: polygon(0 100%, 100% 100%, 50% 0);
+	left: 0;
+	bottom: -15px;
+}
+
+button#left {
+	width: 50px;
+	height: 100px;
+	clip-path: polygon(0 100%, 0 0, 100% 50%);
+	left: -5px;
+	top: 0;
+}
+
+#count {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	font-size: 80px;
+	font-weight: bold;
+	color: darkred;
+}
+
+/*---------------media--------------------*/
+
+@media screen and (max-width: 1000px) {
+	#controls {
+		visibility: visible;
+	}
+}
+
